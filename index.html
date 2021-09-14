@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <title>The Todo App - Draft</title>
+</head>
+
+<body>
+    <div class="main_container">
+
+        <form class="c-todo__form u-padding-left-40px u-padding-right-40px">
+            <label for="td_Title">Title</label>
+            <br>
+
+            <input type="text" id="tdTitle" name="td_Title" class="u-width-100percent">            
+            <br>
+            <br>
+
+            <label for="td_Description">Description</label>
+            <br>
+
+            <textarea id="tdDescription" name="td_Description" rows="4" class="u-width-100percent"></textarea>            
+            <br>
+            <br>
+
+            <label for="td_Category">Choose a category:</label>
+            <br>
+
+            <select name="td_Category" id="tdCategory" class="u-width-50percent"></select>
+            <br>
+            <br>
+
+            <button id="todoFormSubmit" type="button">Submit</button>
+        </form>
+        <br>
+
+        <hr />
+        <br>
+        
+        <ul id="todoList" class="u-list-item-no-styling u-padding-right-40px"></ul>
+    </div>
+
+    <script src="./src/app/appInitializer.js"></script>
+    <script src="./src/app/appRepository.js"></script>
+    <script src="./src/app/appService.js"></script>
+    <script src="./src/app/appUI.js"></script>
+    <script src="./src/app/appUtils.js"></script>
+    <script src="./src/app/main.js"></script>
+</body>
+
+</html>
