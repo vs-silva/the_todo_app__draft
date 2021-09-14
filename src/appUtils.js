@@ -132,8 +132,6 @@
         updateCategoriesSelect( _categoryServices.getAllCategories(), select);   
     }
 
-    
-
     App.utils = {
         init
     };
