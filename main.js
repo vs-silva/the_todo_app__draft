@@ -1,5 +1,0 @@
-(function (App) {
-
-    
-
-}(window.App));
