@@ -1,0 +1,46 @@
+.u-padding-left-40px{
+    padding-left: 40px;
+}
+
+.u-padding-right-40px{
+    padding-right: 40px;
+}
+
+.u-list-item-no-styling {
+    list-style: none;
+}
+
+.u-width-100percent{
+    width: 100%;
+}
+
+.u-width-50percent{
+    width: 50%;
+}
+
+.u-margin-bottom-20px{
+    margin-bottom: 20px;
+}
+
+.u-padding-left-10px{
+    padding-left: 10px;
+}
+
+.u-padding-rigth-10px
+{
+    padding-right: 10px;
+}
+
+.u-cursor-pointer{
+    cursor: pointer;
+}
+
+body{
+    margin-top: 100px;
+}
+
+.main_container {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto;    
+}
