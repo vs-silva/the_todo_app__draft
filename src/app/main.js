@@ -1,6 +1,6 @@
 (function (App) {
 
-    if(App.utils.init)
+    if(App.utils)
     {
         App.utils.init();
     }
