@@ -25,7 +25,7 @@
         }
     }
 
-    function editTodo(idPayload, todoPayload = null, fn = null)
+    function editTodo(idPayload, todoPayload = null, fn = null) // I think you and others would benefit on the long term with a more descriptive name for "fn" 
     {
         const todo = (idPayload) ? getTodoById(idPayload) : null;
 
@@ -42,7 +42,7 @@
         }
     }
 
-    function deleteTodo(idPayload, fn = null)
+    function deleteTodo(idPayload, fn = null) // I think you and others would benefit on the long term with a more descriptive name for "fn" 
     {
         const todo = getTodoById(idPayload);
 
@@ -60,6 +60,8 @@
         {
             for (const key in formDataPayload) {
     
+                //Im not sure if it was on porpuse or if it was for a particular reason but 
+                //you can obtain the same result with "formDataPayload.hasOwnProperty(key)" and less code
                 if (Object.hasOwnProperty.call(formDataPayload, key))
                 {                                   
                     validationResults.push( (formDataPayload[key].toString().trim() !== '') );

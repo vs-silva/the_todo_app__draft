@@ -1,5 +1,7 @@
 (function(App){
 
+    // Perhaps changing the following lines to:
+    // const {todosService: _todoServices, categoriesService: _categoryServices} = App.services;
     const _todoServices = App.services.todosService;
     const _categoryServices = App.services.categoriesService;
     const _ui = App.ui;
@@ -7,11 +9,11 @@
     const _actions = {
         edit: {
             label: 'edit',
-            fn: _todoServices.editTodo
+            fn: _todoServices.editTodo // I think you and others would benefit on the long term with more descriptive object key names 
         },
         delete: {
             label: 'delete',
-            fn: _todoServices.deleteTodo
+            fn: _todoServices.deleteTodo // I think you and others would benefit on the long term with more descriptive object key names 
         },
     };
 
@@ -121,6 +123,8 @@
 
     function resetForm()
     {
+        //Perhaps only one line of code? Much like you do on line 22.
+        // const { form, select } = _ui;
         const { form } = _ui;
         const { select } = _ui;
 
