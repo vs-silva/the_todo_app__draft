@@ -12,6 +12,21 @@
 <body>
     <div class="main_container">
 
+        <!-- 
+            I would go for a different class naming if you are trying to implement BEM 
+            Something like:
+                - c-todo-form
+                    - c-todo-form__label (for each label)
+                    - c-todo-form__input c-todo-form__title
+                    - c-todo-form__input c-todo-form__description
+                    - c-todo-form__input c-todo-form__category
+                    - c-todo-form__input c-todo-form__submit
+            
+            "c-todo-form" is main wrapper class
+            "c-todo-form__label" is shared class for all labels inside "c-todo-form"
+            "c-todo-form__input" is shared class for all inputs inside "c-todo-form"
+            "c-todo-form__title" and others would be classes where you could implement more specifc styling
+        -->
         <form class="c-todo__form u-padding-left-40px u-padding-right-40px">
             <label for="td_Title">Title</label>
             <br>
